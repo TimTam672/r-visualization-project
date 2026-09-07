@@ -2,7 +2,7 @@
 
 An end-to-end data science portfolio project in **R** showcasing exploratory data analysis (EDA), statistical modeling, and accessible data visualizations.
 
-👉 **[Click Here to View the Live Interactive Report](https://github.io)**
+👉 **[Click Here to View the Live Interactive Report]([https://github.io](https://timtam672.github.io/r-visualization-project/))**
 
 ---
 
