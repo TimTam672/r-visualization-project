@@ -7,7 +7,7 @@ An exploratory data analysis (EDA) and advanced visualization project in R inves
 ---
 
 ## 📌 Project Overview
-* **Goal**: Analyze 23 explanatory variables (demographics, credit history, bill scales, and payment amounts) to determine key indicators of credit default risk.
+* **Goal**: Analyze 23 independent variables (demographics, credit history, bill scales, and payment amounts) to determine key indicators of credit default risk.
 * **Key Findings**: 
   * Isolated `Max Bill Amount` and `Mean Pay Amount` as the primary financial drivers across all credit limit tiers.
   * Individuals with a higher `Max Bill Amount` and `Mean Pay Amount` are likely to have a higher Credit Limit Tier. 
@@ -17,9 +17,23 @@ An exploratory data analysis (EDA) and advanced visualization project in R inves
 
 ---
 
-## 📊 Visualizations & Artifacts
-The analysis code generates several analytical assets (saved as `.png` files in the repository root) to illustrate findings. All primary plots are designed to be color-blind friendly:
+## 💾 Dataset Information
+This project utilizes the classic **Default of Credit Card Clients Dataset** sourced from the UCI Machine Learning Repository.
 
+* **Source URL**: [UCI Machine Learning Repository - Dataset 350](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
+* **Original Publication**: Yeh, I., & Lien, C. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. *Expert Systems with Applications*, 36, 2473-2480. [DOI Link](https://doi.org/10.1016/J.ESWA.2007.12.020)
+* **Volume**: 30,000 instances, including 23 independent variables and one binary response variable indicating default payment status (1 for default, 0 for no default), 0 missing values.
+
+---
+
+## 📄 License
+The CC BY 4.0 license allows anyone to copy, redistribute the material for any purpose, even commercially, and remix, transform, and build upon the material for any purpose, but we must give appropriate credit.Users cannot impose restrictions that limit others’ rights under this license.
+
+---
+
+### Repository Structure
+* **`R_project.Rmd`**: Main R Markdown workbook housing data preprocessing, PCA calculations, analytics pipelines, and Plotly dashboard configurations.
+* **`index.html`**: Compiled interactive web output mapped for automatic hosting via GitHub Pages.
 * **`gg_a.png` & `gg_b.png`**
   * **Figure 1**: Scatter plots and density plots for Non-Defaulters to identify potentially interesting patterns.
   * **Figure 2**: Scatter plots and density plots for Defaulters to identify potentially interesting patterns.
@@ -35,22 +49,8 @@ The analysis code generates several analytical assets (saved as `.png` files in 
 * **`newplot.png`**
   * **Figure 8**: Plotly figure illustrating the relationship between `Mean Pay Amount` and `Max Bill Amount`, categorized by Default Payment Status (color) and Credit Limit Tier (shape). The red curve represents the LOWESS smoothing curve for Defaulters, while the blue dotted curve represents the LOWESS smoothing curve for Non-Defaulters. *(Note: Please disregard the "1, NA" entries in the legend, as they are a rendering artifact).*
 
----
-
-## 💾 Dataset Information
-This project utilizes the classic **Default of Credit Card Clients Dataset** sourced from the UCI Machine Learning Repository.
-
-* **Source URL**: [UCI Machine Learning Repository - Dataset 350](https://uci.edu)
-* **Original Publication**: Yeh, I., & Lien, C. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. *Expert Systems with Applications*, 36, 2473-2480. [DOI Link](https://doi.org)
-* **Volume**: 30,000 instances, 23 features, 0 missing values.
-* **Variables Extracted**:
-  * **Demographics**: Credit limit (`LIMIT_BAL`), `SEX`, `EDUCATION`, `MARRIAGE`, `AGE`.
-  * **Repayment History**: Past monthly tracking records (`PAY_0` to `PAY_6`) from April to September 2005.
-  * **Statements & Payments**: Monthly bill statement amounts (`X12-X17`) and previous payment values (`X18-X23`).
-  * **Target Variable**: Binary response indicator (`1` = Default; `0` = No Default).
 
 ---
-
 ## 🛠️ Tech Stack & Environment
 This project relies on modern R Markdown rendering, advanced visualization grid styling, and interactive dashboard dependencies.
 
@@ -83,32 +83,3 @@ packageVersion("plotly")
 packageVersion("htmlwidgets")
 packageVersion("htmltools")
 ```
-
-### Repository Structure
-* **`R_project.Rmd`**: Main R Markdown workbook housing data preprocessing, PCA calculations, analytics pipelines, and Plotly dashboard configurations.
-* **`index.html`**: Compiled interactive web output mapped for automatic hosting via GitHub Pages.
-
-
----
-
-## 🚀 Getting Started Locally
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd r-visualization-project
-   ```
-
-2. **Setup R Environment:**
-   Open an R session or RStudio and ensure you have the vital packages installed:
-   ```r
-   install.packages(c("rmarkdown", "htmltools", "plotly", "ggplot2", "dplyr", "tidyverse"))
-   ```
-
-3. **Rebuild or Modify:**
-   Open `R_project.Rmd` in RStudio and select **Knit** to run the processing scripts and compile a new `index.html` locally.
-
----
-
-## 📄 License
-This project is built using dataset schemas distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. You are free to share, copy, adapt, and remix these analytics materials provided appropriate citation credit is passed back to the creators.
