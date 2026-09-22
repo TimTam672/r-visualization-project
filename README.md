@@ -2,7 +2,7 @@
 
 An exploratory data analysis (EDA) and advanced visualization project in R investigating customer default payments in Taiwan. Using a dataset of 30,000 credit clients, this project isolates key financial drivers across different credit limit tiers and leverages interactive visualization techniques to uncover indicators of financial distress and default risk.
 
-🔗 **[Live Project Interactive Dashboard](https://github.io)**
+🔗 **[Live Project Interactive Dashboard](https://timtam672.github.io/r-visualization-project/)**
 
 ---
 
@@ -48,6 +48,15 @@ The CC BY 4.0 license allows anyone to copy, redistribute the material for any p
   * **Figure 7**: Explanatory data visualization of the relationship among `Mean Pay Amount`, `Mean Bill Amount`, and Credit Limit Tier. The color gradient represents the Credit Limit Tier, while the black line indicates the LOWESS smoothing curve (using a window of 70% of the data points).
 * **`newplot.png`**
   * **Figure 8**: Plotly figure illustrating the relationship between `Mean Pay Amount` and `Max Bill Amount`, categorized by Default Payment Status (color) and Credit Limit Tier (shape). The red curve represents the LOWESS smoothing curve for Defaulters, while the blue dotted curve represents the LOWESS smoothing curve for Non-Defaulters. *(Note: Please disregard the "1, NA" entries in the legend, as they are a rendering artifact).*
+
+ **[fig1](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/gg_a.png)**
+ **[fig2](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/gg_b.png)**
+ **[fig3](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/combined_plot_a.png)**
+ **[fig4](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/combined_plot_b.png)**
+ **[fig5](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/combined_pca.png)**
+ **[fig6](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/pca_plot_all.png)**
+ **[fig7](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/scatter_plot_a_b.png)**
+ **[fig8](https://github.com/TimTam672/r-visualization-project/blob/d3aebe9a18a6dc4f08cb413637736aef6f6b45de/newplot.png)**
 
 
 ---
