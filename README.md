@@ -52,22 +52,42 @@ This project utilizes the classic **Default of Credit Card Clients Dataset** sou
 ---
 
 ## 🛠️ Tech Stack & Environment
-This project relies on modern R Markdown rendering and interactive dashboard dependencies.
+This project relies on modern R Markdown rendering, advanced visualization grid styling, and interactive dashboard dependencies.
 
 ```r
-# Core environment dependencies
-library(htmltools)
-library(plotly)
-library(ggplot2)
-library(dplyr)
+# Core Data Processing & Utilities
+library(tidyverse)
+library(scales)
+library(knitr)
 
-# Check htmltools runtime versions
+# Static & Advanced Visualizations
+library(ggplot2)
+library(GGally)
+library(patchwork)
+library(cowplot)
+
+# Interactive Dashboard Operations
+library(plotly)
+library(htmlwidgets)
+library(htmltools)
+
+# Verify local package versions
+packageVersion("tidyverse")
+packageVersion("patchwork")
+packageVersion("cowplot")
+packageVersion("scales")
+packageVersion("knitr")
+packageVersion("ggplot2")
+packageVersion("GGally")
+packageVersion("plotly")
+packageVersion("htmlwidgets")
 packageVersion("htmltools")
 ```
 
 ### Repository Structure
 * **`R_project.Rmd`**: Main R Markdown workbook housing data preprocessing, PCA calculations, analytics pipelines, and Plotly dashboard configurations.
 * **`index.html`**: Compiled interactive web output mapped for automatic hosting via GitHub Pages.
+
 
 ---
 
